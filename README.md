@@ -24,7 +24,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
   - [Prerequisites](#prerequisites)
   - [Install](#install)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -98,11 +97,6 @@ Use the SQL commands in schema.sql data.sql to create the database and tables in
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[Add tables for pet owners, clinic employees and visits]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
