@@ -122,3 +122,12 @@ VALUES
 (10,3,'May 24,2020'),
 (10,1,'Jan 11,2021');
 COMMIT;
+
+/*  Performance audit exercise*/
+
+
+-- insert new visits for exercise
+INSERT INTO visits (animal_id, vet_id, date_of_visit) SELECT * FROM (SELECT id FROM animals) animal_ids, (SELECT id FROM vets) vets_ids, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
+
+--insert new owners with generated eemail ids
+insert into owners (full_name, email) select 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
