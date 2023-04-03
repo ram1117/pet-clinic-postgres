@@ -51,6 +51,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 ### Key Features <a name="key-features"></a>
 
 - **[database for animals,animal owners, clinic employees, visits]**
+- **[database is optimized for performance when handling hude amount of data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,6 +93,11 @@ Use the SQL commands in schema.sql data.sql to create the database and tables in
 
 - GitHub: [@ram1117](https://github.com/ram1117)
 - LinkedIn: [Ram Kumar Karuppusamy](https://www.linkedin.com/in/ram-kumar-karuppusamy/)
+
+👤 **Author2**
+
+- GitHub: [@Johnadibe ](https://github.com/Johnadibe)
+- LinkedIn: [John Adibe](https://www.linkedin.com/in/john-adibe-400b36166/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
