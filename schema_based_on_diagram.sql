@@ -30,6 +30,16 @@ CREATE TABLE treatment_join (
 CREATE INDEX tr_historyid_asc ON treatment_join (med_history_id  ASC);
 CREATE INDEX tr_treatmentid_asc ON treatment_join (treatment_id  ASC);
 
+CREATE TABLE invoices(
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  total_amount FLOAT,
+  generated_at TIMESTAMP,
+  payed_at TIMESTAMP,
+  med_history_id INT REFERENCES medical_histories(id)
+);
+
+CREATE INDEX invoices_mhistoryid_asc ON invoices (med_history_id ASC);
+
 
 CREATE TABLE invoice_items (
   id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -42,13 +52,3 @@ CREATE TABLE invoice_items (
 
 CREATE INDEX invitems_invid_asc ON invoice_items (invoice_id ASC);
 CREATE INDEX invitems_treatmentid_asc ON invoice_items (treatment_id ASC);
-
-CREATE TABLE invoices(
-  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  total_amount FLOAT,
-  generated_at TIMESTAMP,
-  payed_at TIMESTAMP,
-  med_history_id INT REFERENCES medical_histories(id)
-);
-
-CREATE INDEX invoices_mhistoryid_asc ON invoices (med_history_id ASC);
