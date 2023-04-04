@@ -17,7 +17,7 @@ PRIMARY KEY (id)
 ALTER TABLE animals ADD species TEXT;
 
 /* Milestone 3 */
-
+ 
 -- add owners and species tables
 
 CREATE TABLE owners (
